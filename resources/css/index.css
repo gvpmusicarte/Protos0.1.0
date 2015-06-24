@@ -1,0 +1,60 @@
+#eventBox1{
+	display: inline-block;
+	position:relative;
+	background: #CCC;
+	width: 400px;
+	margin-right: 5%;
+	margin-left; 0%;	
+}
+#eventBox1 ul{
+	display: inline-block;
+	position:relative;
+	background:none;
+	width: 99.9%;
+	min-height: 400px;
+	height: auto;
+	margin:0%;	
+}
+#eventBox1 ul li{
+	display:block;
+	position:relative;
+	background:none;
+	width: 99.9%;
+	height: auto;
+	margin:0% 0% 1% 0%;
+	padding: 0px;
+	float:left;
+}
+
+#eventBox1 ul li p{
+	display: inline;
+	position:relative;
+	background:none;
+	width: 99.9%;
+	height: auto;
+	margin:0% 0% 0% 0%;
+	float:left;
+	font-weight: bold;
+		padding: 0px;
+}
+
+#eventBox1 ul li textarea{
+	display: inline-block;
+	position:relative;
+	background:none;
+	width: 99.9%;
+	height: auto;
+	margin:0% 0% 0% 0%;
+	float:left;
+	padding: 2px;
+}
+#eventBox1 ul li img{
+	display: inline-block;
+	position:relative;
+	background:none;
+	width: 99.9%;
+	height: auto;
+	margin:0% 0% 0% 0%;
+	float:left;
+	padding: 2px;
+}
