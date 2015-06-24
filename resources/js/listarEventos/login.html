@@ -1,0 +1,7 @@
+<section id="login" ng-show="userLogin">
+    <label>User</label>
+    <input type="text" name="user" ng-model="usuario" ng-change="userLogin()" >
+    <label>Password</label>
+    <input type="password" name="pass" ng-model="password" ng-change="userLogin()" >
+    <a href="#/pelicula" ng-click="userLogin()" class="logLink" >Ingresar</a>
+</section>
