@@ -7,27 +7,7 @@
  */
 angular.module('Prototipo', [
     'ngRoute',
-    'Prototipo.listarEventos',
     'Prototipo.regEventos'
 ]).config(['$routeProvider', function ($routeProvider) {
-    $routeProvider.otherwise({redirectTo: '/listarEventos'});
+    $routeProvider.otherwise({redirectTo: '/regEventos'});
 }]);
-
-/*.service('infoCompra', function () {
-        var nombrePelicula = "";
-        var horaPelicula = "";
-        return {
-            getNombrePelicula:function () {
-                return nombrePelicula;
-            },
-            setNombrePelicula:function (value) {
-                nombrePelicula = value;
-            },
-            getHoraPelicula:function () {
-                return horaPelicula;
-            },
-            setHoraPelicula:function (value) {
-                horaPelicula = value;
-            },
-        };
-    });*/
