@@ -7,7 +7,7 @@
 angular.module('Prototipo.regUsuario', ['ngRoute'])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/regUsuario', {
-            templateUrl: 'resources/js/regUsusario/regUsuario.html',
+            templateUrl: 'resources/js/regUsuario/regUsuario.html',
             controller: 'regUsuarioCtrl'
         });
     }])
