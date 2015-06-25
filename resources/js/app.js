@@ -10,7 +10,7 @@ angular.module('Prototipo', [
     'Prototipo.regEventos',
     'Prototipo.regUsuario',
     'Prototipo.listarEventos',
-    'Prototipo.mostrarEvento'
+    'Prototipo.mostrarEvento',
     'Prototipo.modEventos',
 ]).config(['$routeProvider', function ($routeProvider) {
     $routeProvider.otherwise({redirectTo: '/listarEventos'});

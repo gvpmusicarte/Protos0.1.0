@@ -12,7 +12,7 @@ angular.module('Prototipo.mostrarEvento', ['ngRoute'])
         });
     }])
     
-.controller('mostrarEventoCtrl', ['$scope', function ($scope) { 
+.controller('mostrarEventoCtrl', ['$scope', '$location', function ($scope, $location) { 
 
 	$scope.init = function(){
 	};
