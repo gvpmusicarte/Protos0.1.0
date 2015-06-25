@@ -1,0 +1,56 @@
+<style type="text/css">
+    .Table
+    {
+        display: table;			
+		width: 1200px;
+		margin:0 auto;		
+    }
+    .Title
+    {
+        display: table-caption;		
+        text-align: center;
+        font-weight: bold;
+        font-size: larger;
+    }
+    .Heading
+    {
+        display: table-row;
+        font-weight: bold;
+        text-align: center;
+    }
+    .Row
+    {
+        display: table-row;
+		margin-left: auto ;
+		margin-right: auto ;
+    }
+    .Cell
+    {
+        display: table-cell;               
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+	.Button {
+	margin:0 auto;
+	background-color:#6699FF;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display: center;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.Button:hover {
+	background-color:#3366FF;
+}
+.Button:active {
+	position:relative;
+	top:1px;
+}	
+</style>
