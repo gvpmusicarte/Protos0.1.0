@@ -9,8 +9,7 @@
     <script src="resources/js/angular-1.3.15/angular.min.js"></script>
     <script src="resources/js/angular-1.3.15/angular-route.min.js"></script>
     <script src="resources/js/app.js"></script>
-    
-    
+    <link href="resources/css/index.css" rel="stylesheet">
     
     <!--Tema-->
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -18,6 +17,7 @@
     <link href="resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="resources/css/new.css" rel="stylesheet"> 
     <link href="resources/css/charts-graphs.css" rel="stylesheet">
+    <link href="resources/css/blog.css" rel="stylesheet">
     <!-- Datepicker CSS -->
     <link rel="stylesheet" type="text/css" href="resources/css/datepicker.css">
 
@@ -179,8 +179,8 @@
     </header>
     <!--End Header tema-->
     
-    
-    <!--Menu-->
+
+     <!--Menu-->
     
              <!-- Top Nav Start -->
                         <div id='cssmenu'>
@@ -192,7 +192,7 @@
                               </a>
                             </li>
                             <li>
-                              <a href="forms.html">
+                              <a href="#/listaEventos">
                                 <i class="fa fa-align-justify"></i>
                                 Eventos
                               </a>
@@ -201,7 +201,7 @@
                               <a href='#'><i class="fa fa-bar-chart-o"></i>Publicar</a>
                 
                               <ul>
-                                 <li><a href='flot.html'>Publicar Evento</a></li>                                 
+                                 <li><a href='#'>Publicar Evento</a></li>                                 
                               </ul>
                 
                             </li>
@@ -209,43 +209,23 @@
                               <a href='#'><i class="fa fa-flask"></i>Registro</a>
                 
                               <ul>
-                                 <li><a href='ui-elements.html'>Registrar Usuario</a></li>                                
+                                 <li><a href='#/regUsuario'>Registrar Usuario</a></li> 
+                                <li><a href='#/regEventos'>Registrar Eventos</a></li> 
+                                <li><a href='#/modUsuario'>Modificar Usuario</a></li> 
+                                <li><a href='#/modEventos'>Modificar Eventos</a></li>
                               </ul>
                 
                             </li>
                             <li class=''>
                               <a href='#'><i class="fa fa-dashboard"></i>Contacto</a>
-                <!--
-                              <ul>
-                                <li><a href='#'>Blog</a>
-                                  <ul>
-                                    <li><a href='blog.html'>Blog</a></li>
-                                    <li><a href='blog-full-page.html'>Blog Full Page</a></li>
-                                  </ul>
-                                </li>
-                                <li><a href='edit-profile.html'>Edit Profile</a></li>
-                                <li><a href='invoice.html'>Invoice</a></li>
-                                <li><a href='default.html'>default</a></li>
-                                <li><a href='#'>Submenu</a>
-                                  <ul>
-                                    <li><a href='#'>Sub Product</a></li>
-                                    <li><a href='#'>Sub Product</a></li>
-                                    <li><a href='#'>Sub Product</a></li>
-                                  </ul>
-                                </li>
-                                <li><a href='login.html'>Login</a></li>
-                                <li><a href='help.html'>Help</a></li>
-                                <li><a href='404.html'>404</a></li>
-                                <li><a href='500.html'>500</a></li>
-                              </ul>
-                -->
+      
                             </li>
                             <li class=''>
                               <a href='#'><i class="fa fa-table"></i>Perfil</a>
                 
                               <ul>
-                                 <li><a href='tables.html'>Modificar mi Perfil</a></li>
-                                 <li><a href='pricing.html'>Cambiar mi Contraseña</a></li>                                 
+                                 <li><a href='#'>Modificar mi Perfil</a></li>
+                                 <li><a href='#'>Cambiar mi Contraseña</a></li>                                 
                               </ul>
                 
                             </li>                            
@@ -297,7 +277,7 @@
                           </ul>
                               <div class="custom-search hidden-sm hidden-xs">
                               <input type="text" class="search-query" placeholder="Buscar ...">
-                              <i class="fa fa-search"></i>
+                              <a class="fa fa-search" href="#/listarEventos"></a>
                               </div>
                         </div>
         <!-- Sub Nav End -->
@@ -305,18 +285,17 @@
     <!---End Menu-->
     
     
-    
     <div id="content">
         <div ng-view></div>
     </div>
 
     <!--Registro de las dependencias -->
-    <script src="resources/js/login/login.js"></script>
-    <script src="resources/js/pelicula/pelicula.js"></script>
-    <script src="resources/js/asiento/asiento.js"></script>
-	<script src="resources/js/resultados/resultados.js"></script>
-    
-    
+    <script src="resources/js/regEventos/regEventos.js"></script>
+    <script src="resources/js/regUsuario/regUsuario.js"></script>
+    <script src="resources/js/modEventos/modEventos.js"></script>
+    <script src="resources/js/listarEventos/listarEventos.js"></script>
+    <script src="resources/js/mostrarEvento/mostrarEvento.js"></script>
+    <script src="resources/js/modUsuario/modUsuario.js"></script>
     <!--Tema-->
     <!-- Main Container end -->
 
