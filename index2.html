@@ -326,7 +326,7 @@
         <!-- Top Nav End -->
 
         <!-- Sub Nav End -->
-        <!--<div class="sub-nav hidden-sm hidden-xs">
+        <<!--<div class="sub-nav hidden-sm hidden-xs">
           <ul>
             <li><a href="" class="heading">Dashboard</a></li>
             <li class="hidden-sm hidden-xs">
@@ -369,14 +369,20 @@
                               Subcategoria: <input type="text" id="txtSubCategoria"/>
                                 </br>
                             </li>
-                            <li>Fecha de inicio: <input type="text"  name="date" />                               
-                                 <i class="fa fa-calendar"></i> 
-                                </br>
+                            <li>                                                      
+                                <div class="container" ng-app="modalTest" ng-controller="dialogTestCtrl">
+                                   <p>Fecha Inicio: <span class="text-info">{{data.dt | date:'fullDate' }}</span></p>
+                                    <button type="button" data-dismiss="modal"  ng-click="launch()"><i class="fa fa-calendar"></i></button>  
+                                </div>                               
+                                                               
+                                
+                                </br></br></br></br>
                             </li>
                             <li>
-                                Fecha de fin: <input type="text"  name="date" />                                
-                                  <i class="fa fa-calendar"></i>
-                                </br>
+                                 <div class="container" ng-app="modalTest" ng-controller="dialogTestCtrl">
+                                   <p>Fecha Fin: <span class="text-info">{{data.dt | date:'fullDate' }}</span></p>
+                                    <button type="button" data-dismiss="modal"  ng-click="launch()"><i class="fa fa-calendar"></i></button>  
+                                </div>    
                             </li>
                             <li>
                                 Precio: <input type="text" name="txtPrecio">
