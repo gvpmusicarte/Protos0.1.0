@@ -1,3 +1,8 @@
 .right-sidebar{
     top: 200px !important;
 }
+
+footer{
+    top: -20px;
+    position: relative;
+}
