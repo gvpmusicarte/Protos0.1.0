@@ -22,6 +22,9 @@
       <link href="resources/css/index.css" rel="stylesheet">
       <link href="resources/css/index2.css" rel="stylesheet">
       
+      <!-- Circular CSS Carousel -->
+      <link href="resources/css/carrusel.css" rel="stylesheet">
+ 
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -806,6 +809,9 @@
     <script src="resources/js/flot/jquery.flot.tooltip.min.js"></script>
     <script src="resources/js/flot/jquery.flot.resize.min.js"></script>
     
+    <!-- Flexisel -->
+    <script type="text/javascript" src="resources/js/flexisel.js"></script>
+    
     <script type="text/javascript">
       //ScrollUp
       $(function () {
@@ -831,6 +837,14 @@
       $('#scrollbar-two').tinyscrollbar();
       $('#scrollbar-three').tinyscrollbar();
       
+    </script>
+    <!-- Scripts para el carusel de listar eventos -->
+    <script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+      $('#myCarousel').carousel({
+        interval:   4000
+      });
     </script>
 
   </body>
