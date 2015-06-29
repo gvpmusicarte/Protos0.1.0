@@ -17,6 +17,7 @@
     <link href="resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="resources/css/new.css" rel="stylesheet"> 
     <link href="resources/css/charts-graphs.css" rel="stylesheet">
+    <link href="resources/css/blog.css" rel="stylesheet">
     <!-- Datepicker CSS -->
     <link rel="stylesheet" type="text/css" href="resources/css/datepicker.css">
 
@@ -27,15 +28,6 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-40304444-1', 'iamsrinu.com');
-      ga('send', 'pageview');
-
-    </script>
     <!--End tema-->
     </head>
 <body>
@@ -197,10 +189,10 @@
                               </a>
                             </li>
                             <li class=''>
-                              <a href='#'><i class="fa fa-bar-chart-o"></i>Publicar</a>
+                              <a href='#/regEventos'><i class="fa fa-bar-chart-o"></i>Publicar</a>
                 
                               <ul>
-                                 <li><a href='#'>Publicar Evento</a></li>                                 
+                                 <li><a href='#/regEventos'>Publicar Evento</a></li>                                 
                               </ul>
                 
                             </li>
@@ -208,8 +200,10 @@
                               <a href='#'><i class="fa fa-flask"></i>Registro</a>
                 
                               <ul>
-                                 <li><a href='#'>Registrar Usuario</a></li> 
-                                <li><a href='#/regEventos'>Registrar Eventos</a></li>   
+                                 <li><a href='#/regUsuario'>Registrar Usuario</a></li> 
+                                <li><a href='#/regEventos'>Registrar Eventos</a></li> 
+                                <li><a href='#/modUsuario'>Modificar Usuario</a></li> 
+                                <li><a href='#/modEventos'>Modificar Eventos</a></li>
                               </ul>
                 
                             </li>
@@ -288,14 +282,11 @@
 
     <!--Registro de las dependencias -->
     <script src="resources/js/regEventos/regEventos.js"></script>
+    <script src="resources/js/regUsuario/regUsuario.js"></script>
+    <script src="resources/js/modEventos/modEventos.js"></script>
     <script src="resources/js/listarEventos/listarEventos.js"></script>
-<!--
-    <script src="resources/js/pelicula/pelicula.js"></script>
-    <script src="resources/js/asiento/asiento.js"></script>
-	<script src="resources/js/resultados/resultados.js"></script>
--->
-    
-    
+    <script src="resources/js/mostrarEvento/mostrarEvento.js"></script>
+    <script src="resources/js/modUsuario/modUsuario.js"></script>
     <!--Tema-->
     <!-- Main Container end -->
 

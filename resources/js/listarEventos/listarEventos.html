@@ -1,98 +1,219 @@
-<!-- Dashboard Wrapper Start -->
-<div class="dashboard-wrapper">
-
-    <!-- Left Sidebar Start -->
-    <div class="left-sidebar">
-
-        <!-- Row Start -->
-        <div class="row">
-            <div class="col-lg-14 col-md-12">
-                <div class="widget">
-                    <div class="widget-header">
-                    <div class="title">
-                    Inicio
-                    <span class="mini-title">
-                    Eventos
-                    </span> 
-                    </div>
-                    <span class="tools">
-                    <!--    <a class="btn btn-info btn-sm" href="#">Today</a>
-                    <a class="btn btn-success btn-sm" href="#">Yesterday</a>
-                    <a class="btn btn-danger btn-sm" href="#">Last week</a>
-                    </span> -->
-                    </div>
-                    <div class="widget-body">
-                        <div class="metro-nav">
-
-                        <div id="eventBox1">
-                        <ul>
-                        <li><p>Musica >><span>Concierto</span></p>
-                        <p>Título: <span>Costa Rica Rock Fest</span></p>
-                        </li>
-                        <li><img src="resources/images/crRockFest.jpg" id="crRockFest"></li>
-                        <li>
-                        Descripción:
-                        <textarea> Costa Rica Rock Fest"</textarea> 
-                        </li>
-                        <li>
-                        <p>Fecha de inicio: <span>2015/7/01.</span></p>
-                        <p>Fecha de fin: <span>2015/7/01.</span></p>
-                        <p>Lugar: <span>Parque viva.</span></p>
-                        </li>
-                        <li><p>Dirección:</p>
-                        <p>San Antonio de Belén, complejo pedregal.</p>
-                        </li>
-                        <li><p>Costo: <span>5000 Colones.</span></p> <a href="#">ver mas...</a></li>
-                        </ul>     
-                        </div>
-
-                        <div id="eventBox1">
-                        <ul>
-                        <li><p>Musica >><span>Recital</span></p>
-                        <p>Título: <span>Concierto de piano.</span></p>
-                        </li>
-                        <li><img src="resources/images/ConciertoDePiano.jpg" id="ConciertoDePiano"></li>
-                        <li>
-                        Descripción:
-                        <textarea> Concierto de la escuela de piano de la Universid de Costa Rica.</textarea>
-                        </li>
-                        <li>
-                        <p>Fecha de inicio: <span>2015/7/01.</span></p>
-                        <p>Fecha de fin: <span>2015/7/01.</span></p>
-                        <p>Lugar: <span>Auditorio 1</span></p>
-                        </li>
-                        <li><p>Dirección:</p>
-                        <p>San pedro de montes de oca. Universidad de Costa Rica, auditorio principal.</p>
-                        </li>
-                        <li><p>Costo: <span>6000 Colones.</span></p> <a href="#">ver mas...</a></li>
-                        </ul>
-                        </div>
-
-                        <div id="eventBox1">
-                        <ul>
-                        <li><p>Deporte >><span>Foot ball</span></p>
-                        <p>Título: <span>Torneo de invierno.</span></p>
-                        </li>
-                        <li><img src="resources/images/TorneoFootball.jpg" id="TorneoFootball"></li>
-                        <li>
-                        Descripción:
-                        <textarea> Clasico del football nacional. Alajuela vs Saprissa"</textarea>
-                        </li>
-                        <li>
-                        <p>Fecha de inicio: <span>2015/7/01.</span></p>
-                        <p>Fecha de fin: <span>2015/7/01.</span></p>
-                        <p>Lugar: <span>Parque viva.</span></p>
-                        </li>
-                        <li><p>Dirección:</p>
-                        <p>San josé, Sabana oeste.</p>
-                        </li>
-                        <li><p>Costo: <span>6000 Colones.</span></p> <a href="#">ver mas...</a></li>
-                        </ul>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="col-lg-12 col-md-12">
+    <div class="widget">
+      <div class="widget-header">
+        <div class="title">
+          Eventos
         </div>
-    </div>
-</div>
+      </div>
+<!--  *********************************************************************************************** -->
+<div class="well">
+  <h5 class="Subtitle1">
+    Musica
+  </h5>
+  <!-- Carousel
+  ================================================== -->            
+  <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+          <div class="item active">
+              <div class="row">
+                  <div class="col-md-3">
+                    <!-- ***** -->
+                      <div class="list-group">
+                        <div class="list-group-item">
+                          <h5 class="Subtitle2">Concierto >></strong></h5>
+                          <p class="list-group-item list-group-item"><strong>Título: </strong><span>Costa Rica Rock Fest</span></p> 
+                            <img class="thumbnail" data-src="holder.js/100%x180" alt="100%x180" src="resources/images/crRockFest.jpg" id="crRockFest" style="height: 180px; width: 100%; display: block;">
+                        </div>
+                        <div class="list-group-item">
+                          <p class="list-group-item-text"><strong>Descripción: </strong>Costa Rica Rock Fest </p>
+                          <p><strong>Lugar: </strong>Parque viva.</br>
+                          <strong>Dirección: </strong></br>
+                          San Antonio de Belén, complejo pedregal.</p>
+                        </div>
+                        <div class="list-group-item">
+                          <p><strong>Fecha de inicio: </strong>2015/7/01. <strong>Fecha de fin: </strong>2015/7/01.
+                          <strong>Costo: </strong>5000 Colones.</p>
+                          <button class="btn btn-primary" role="button" ng-click="verEvento();" >Ver mas...</a>
+                        </div>                                                                            
+                      </div>
+                    <!-- ***** --> 
+                  </div>
+                  <div class="col-md-3">
+                    <!-- ***** -->
+                      <div class="list-group">
+                        <div class="list-group-item">
+                          <h5 class="Subtitle2">Concierto >></strong></h5>
+                          <p class="list-group-item list-group-item"><strong>Título: </strong><span>Concierto de piano</span></p> 
+                            <img class="thumbnail" data-src="holder.js/100%x180" alt="100%x180" src="resources/images/ConciertoDePiano.jpg" id="ConciertoDePiano" style="height: 180px; width: 100%; display: block;">
+                        </div>
+
+                        <div class="list-group-item">
+                          <p class="list-group-item-text"><strong>Descripción: </strong>Concierto de la escuela de piano de la Universid de Costa Rica. </p>
+                          <p><strong>Lugar: </strong>Auditorio 1, universidad de Costa Rica.</br>
+                          <strong>Dirección: </strong></br>
+                          San pedro de montes de oca. Universidad de Costa Rica, auditorio principal.</p>
+                        </div>
+                        <div class="list-group-item">
+                          <p><strong>Fecha de inicio: </strong>2015/7/01. <strong>Fecha de fin: </strong>2015/7/01.</br>
+                          <strong>Costo: </strong>5000 Colones.</p>
+                          <button class="btn btn-primary" role="button" ng-click="verEvento();" >Ver mas...</a>
+                        </div>                                                                            
+                      </div> 
+                      <!-- ***** -->
+                  </div>
+                  <div class="col-md-3">
+                    <!-- ***** -->
+                      <div class="list-group">
+                        <div class="list-group-item">
+                          <h5 class="Subtitle2">Concierto >></strong></h5>
+                          <p class="list-group-item list-group-item"><strong>Título: </strong><span>Noche de hip hop.</span></p>
+                            <img class="thumbnail" data-src="holder.js/100%x180" alt="100%x180" src="resources/images/ConciertoHipHop1.jpg" id="TorneoFootball" style="height: 180px; width: 100%; display: block;">
+                        </div>
+                        <div class="list-group-item">
+                          <p class="list-group-item-text"><strong>Descripción: </strong>Concierto con Snoop Dog. </p>
+                          <p><strong>Lugar: </strong>Dicoteca Stero Love..</br>
+                          <strong>Dirección: </strong></br>
+                          Santa Ana, Lindora.</p>
+                        </div>
+                        <div class="list-group-item">
+                          <p><strong>Fecha de inicio: </strong>2015/7/09. <strong>Fecha de fin: </strong>2015/7/09.</br>
+                          <strong>Costo: </strong>5000 Colones.</p>
+                          <button class="btn btn-primary" role="button" ng-click="verEvento();" >Ver mas...</a>
+                        </div>                                                                            
+                      </div>
+                      <!-- ***** -->
+                  </div>
+                  <div class="col-md-3">
+                    <!-- ***** -->                   
+                      <div class="list-group">
+                        <div class="list-group-item">
+                          <h5 class="Subtitle2">Concierto >></strong></h5>
+                          <p class="list-group-item list-group-item"><strong>Título: </strong><span>Pussy Cat Dolls en vivo.</span></p>
+                            <img class="thumbnail" data-src="holder.js/100%x180" alt="100%x180" src="resources/images/ConciertoPCDolls.jpg" id="TorneoFootball" style="height: 180px; width: 100%; display: block;">
+                        </div>
+                        <div class="list-group-item">
+                          <p class="list-group-item-text"><strong>Descripción: </strong>Concierto de gira latinoamericana. </p>
+                          <p><strong>Lugar: </strong>Jazz Cafe.</br>
+                          <strong>Dirección: </strong></br>
+                          Escazu.</p>
+                        </div>
+                        <div class="list-group-item">
+                          <p><strong>Fecha de inicio: </strong>2015/7/01. <strong>Fecha de fin: </strong>2015/7/01.</br>
+                          <strong>Costo: </strong>20000-15000 Colones.</p>
+                          <button class="btn btn-primary" role="button" ng-click="verEvento();" >Ver mas...</a>
+                        </div>                                                                            
+                      </div>                        
+                    <!-- ***** -->
+                  </div>
+              </div>
+          </div>
+          <div class="item">
+          <div class="row">
+                  <div class="col-md-3">
+                    <!-- ***** -->
+                      <div class="list-group">
+                        <div class="list-group-item">
+                          <h5 class="Subtitle2">Concierto >></strong></h5>
+                          <p class="list-group-item list-group-item"><strong>Título: </strong><span>Musica en vivo.</span></p>
+                            <img class="thumbnail" data-src="holder.js/100%x180" alt="100%x180" src="resources/images/Evento.png" id="TorneoFootball" style="height: 180px; width: 100%; display: block;">
+                        </div>
+                        <div class="list-group-item">
+                          <p class="list-group-item-text"><strong>Descripción: </strong>Concierto gratuito. </p>
+                          <p><strong>Lugar: </strong>Parque nacional.</br>
+                          <strong>Dirección: </strong></br>
+                          San José.</p>
+                        </div>
+                        <div class="list-group-item">
+                          <p><strong>Fecha de inicio: </strong>2015/7/08. <strong>Fecha de fin: </strong>2015/7/08.</br>
+                          <strong>Costo: </strong>5000 Colones.</p>
+                          <button class="btn btn-primary" role="button" ng-click="verEvento();" >Ver mas...</a>
+                        </div>                                                                            
+                      </div>
+                    <!-- ***** -->
+                  </div>
+                  <div class="col-md-3">
+                    <!-- ***** -->
+                      <div class="list-group">
+                        <div class="list-group-item">
+                          <h5 class="Subtitle2">Concierto >></strong></h5>
+                          <p class="list-group-item list-group-item"><strong>Título: </strong><span>Musica en vivo.</span></p>
+                            <img class="thumbnail" data-src="holder.js/100%x180" alt="100%x180" src="resources/images/Evento.jpg" id="ConciertoDePiano" style="height: 180px; width: 100%; display: block;">
+                        </div>
+                        <div class="list-group-item">
+                          <p class="list-group-item-text"><strong>Descripción: </strong>Concierto gratuito. </p>
+                          <p><strong>Lugar: </strong>Parque nacional.</br>
+                          <strong>Dirección: </strong></br>
+                          San José.</p>
+                        </div>
+                        <div class="list-group-item">
+                          <p><strong>Fecha de inicio: </strong>2015/7/08. <strong>Fecha de fin: </strong>2015/7/08.</br>
+                          <strong>Costo: </strong>5000 Colones.</p>
+                          <button class="btn btn-primary" role="button" ng-click="verEvento();" >Ver mas...</a>
+                        </div>                                                                            
+                      </div> 
+                      <!-- ***** -->
+                  </div>
+                  <div class="col-md-3">
+                    <!-- ***** -->
+                      <div class="list-group">
+                        <div class="list-group-item">
+                          <h5 class="Subtitle2">Concierto >></strong></h5>
+                          <p class="list-group-item list-group-item"><strong>Título: </strong><span>Musica en vivo.</span></p>
+                            <img class="thumbnail" data-src="holder.js/100%x180" alt="100%x180" src="resources/images/Evento.png" id="TorneoFootball" style="height: 180px; width: 100%; display: block;">
+                        </div>
+                        <div class="list-group-item">
+                          <p class="list-group-item-text"><strong>Descripción: </strong>Concierto gratuito. </p>
+                          <p><strong>Lugar: </strong>Parque Nacional..</br>
+                          <strong>Dirección: </strong></br>
+                          San Jose.</p>
+                        </div>
+                        <div class="list-group-item">
+                          <p><strong>Fecha de inicio: </strong>2015/7/09. <strong>Fecha de fin: </strong>2015/7/09.</br>
+                          <strong>Costo: </strong>2000 Colones.</p>
+                          <button class="btn btn-primary" role="button" ng-click="verEvento();" >Ver mas...</a>
+                        </div>                                                                            
+                      </div>
+                      <!-- ***** -->
+                  </div>
+                  <div class="col-md-3">
+                    <!-- ***** -->                   
+                      <div class="list-group">
+                        <div class="list-group-item">
+                          <h5 class="Subtitle">Concierto >></strong></h5>
+                          <p class="list-group-item list-group-item"><strong>Título: </strong><span>Musica en vivo.</span></p>
+                            <img class="thumbnail" data-src="holder.js/100%x180" alt="100%x180" src="resources/images/Evento.jpg" id="TorneoFootball" style="height: 180px; width: 100%; display: block;">
+                        </div>
+                        <div class="list-group-item">
+                          <p class="list-group-item-text"><strong>Descripción: </strong>Concierto gratuito. </p>
+                          <p><strong>Lugar: </strong>Parque Nacional.</br>
+                          <strong>Dirección: </strong></br>
+                          San José.</p>
+                        </div>
+                        <div class="list-group-item">
+                          <p><strong>Fecha de inicio: </strong>2015/7/01. <strong>Fecha de fin: </strong>2015/7/01.</br>
+                          <strong>Costo: </strong>6000-15000 Colones.</p>
+                          <button class="btn btn-primary" role="button" ng-click="verEvento();" >Ver mas...</a>
+                        </div>                                                                            
+                      </div>                        
+                    <!-- ***** -->
+                  </div>
+              </div>
+          </div>
+
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-2x"></i></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right fa-2x"></i></a>
+      
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>                
+  </div><!-- End Carousel --> 
+</div><!-- End Well -->
+<!--  *********************************************************************************************** -->
+</div></div>
+
+
+  
+

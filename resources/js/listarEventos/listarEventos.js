@@ -12,7 +12,15 @@ angular.module('Prototipo.listarEventos', ['ngRoute'])
         });
     }])
     
-    .controller('listarEventosCtrl', ['$scope', function ($scope) { 
-    
+.controller('listarEventosCtrl', ['$scope', '$location', function ($scope, $location) { 
+
+	$scope.init = function(){
+	};
+
+	$scope.verEvento = function() {
+		$location.path("/mostrarEvento");
+	}
 	
-    }]);
+	$scope.init();
+
+}]);
