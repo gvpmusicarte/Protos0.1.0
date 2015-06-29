@@ -14,6 +14,10 @@ angular.module('Prototipo.mostrarEvento', ['ngRoute'])
     
 .controller('mostrarEventoCtrl', ['$scope', '$location', function ($scope, $location) { 
 
+	$scope.$on('$routeChangeSuccess', function() {
+		$('#scrollbar-three').tinyscrollbar();
+	});
+
 	$scope.init = function(){
 	};
 	
