@@ -18,18 +18,21 @@
     <link href="resources/fonts/font-awesome.min.css" rel="stylesheet">
     <link href="resources/css/estiloIndex.css" rel="stylesheet">
       
-      
     <!--ANgular-->
     <script src="https://www.google.com/jsapi"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="resources/js/angular-1.3.15/angular.min.js"></script>
     <script src="resources/js/angular-1.3.15/angular-route.min.js"></script>
     <script src="resources/js/app.js"></script>
-
-      <!--Css personalizado -->
-      <link href="resources/css/index.css" rel="stylesheet">
-      <link href="resources/css/index2.css" rel="stylesheet">
-      
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="resources/js/flexisel.js"></script>
+    <!--Css personalizado -->
+    <link href="resources/css/index.css" rel="stylesheet">
+    <link href="resources/css/index2.css" rel="stylesheet">
+    <!-- Circular CSS Carousel -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="resources/css/carrusel.css" rel="stylesheet">
     <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -822,6 +825,14 @@
           scrollText: 'Top', // Text for element
           activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
         });
+      });
+    </script>
+    <!-- Scripts para el carusel de listar eventos -->
+    <script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script>
+      $('#myCarousel').carousel({
+        interval:   4000
       });
     </script>
 
