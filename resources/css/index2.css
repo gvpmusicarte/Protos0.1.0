@@ -1,8 +1,32 @@
-.right-sidebar{
-    top: 200px !important;
+/**/
+.col-lg-9{
+    width: 80% !important;
 }
 
+/*min-nav derecho perfil*/
+
+.server-activity>li>p>a>b{
+    color: #000;
+}
+
+/*Barra derecha*/
+.right-sidebar{
+    top: 205px !important;
+    right: 35px !important;
+}
+
+
+/*Contenido*/
+.left-sidebar{
+    margin-right: 0px !important;
+}
+
+/*Footer*/
 footer{
     top: -20px;
     position: relative;
+}
+
+footer>p>a{
+    color: #FFF !important;
 }
