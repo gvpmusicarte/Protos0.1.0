@@ -345,6 +345,7 @@
            <div class="sub-nav hidden-sm hidden-xs">
                           <ul>
                             <li>
+                                Categorìa: 
                                 <select>
                                   <option  id="sltCategoría" value="Categoria" selected>Categoria</option>  
                                   <option id="sltAcademico" value="Academico">Academico</option>
@@ -369,24 +370,36 @@
                               Subcategoria: <input type="text" id="txtSubCategoria"/>
                                 </br>
                             </li>
-                            <li>Fecha de inicio: <input type="text"  name="date" />                               
-                                 <i class="fa fa-calendar"></i> 
+                            <li>
+                                 Fecha Inicio: <label></label><button type="button" data-dismiss="modal"  ng-click="launch()">
+                                <i class="fa fa-calendar"></i></button>         
                                 </br>
                             </li>
                             <li>
-                                Fecha de fin: <input type="text"  name="date" />                                
-                                  <i class="fa fa-calendar"></i>
-                                </br>
+                                 Fecha Fin: <label></label><button type="button" data-dismiss="modal"  ng-click="launch()">
+                                <i class="fa fa-calendar"></i></button>                                 
                             </li>
                             <li>
-                                Precio: <input type="text" name="txtPrecio">
-                                </br>
+                                Precio: 
+                                <select>
+                                  <option  id="sltPrecio" value="0 - 14999" selected>0 - 14999</option>                               
+                                <option id="sltPrecio" value="15000 - 29999">15000 - 29999</option>
+                                  <option id="sltPrecio" value="30000 - 44999">30000 - 44999</option>
+                                  <option id="sltPrecio" value="45000 - 59999">45000 - 59999</option>
+                                  <option id="sltPrecio" value="60000 - 74999">60000 - 74999</option>  
+                                  <option id="sltPrecio" value="75000 - 89999">75000 - 89999</option>
+                                  <option id="sltPrecio" value="90000 - 104999">90000 - 104999</option>
+                                  <option id="sltPrecio" value="105000 - 114999">105000 - 114999</option>
+                                  <option id="sltPrecio" value="105000 - 114999">115000 - 129999</option>
+                                  <option id="sltPrecio" value="105000 - 114999">130000 - 144999</option>
+                                  <option id="sltPrecio" value="105000 - 114999">145000 - 150000</option>
+                                </select>  
                             </li>
                           </ul>
                               <div class="custom-search hidden-sm hidden-xs">
                               <input type="text" class="search-query" placeholder="Buscar ...">
-                              <a class="fa fa-search" href="#/listarEventos"></a>
-                              </div>
+                                  <a href='#/mostrarEvento'><button class="fa fa-search" role="button"></button></a>
+                            </div>
                         </div>
         <!-- Sub Nav End -->
 
